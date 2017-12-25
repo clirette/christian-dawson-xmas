@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linux Notes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<h1>Hey Christian and Dawson!</h1>
+			</div>
+			<div class="row justify-content-center">
+				<h3>Let's learn some cool Linux stuff!</h3>	
+			</div>
+			<div class="row justify-content-center">
+				<h4></h4>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<h2>Here's what I'm gonna talk about:</h2>
+		<ul>
+			<li>About Linux</li>
+			<li>The Terminal</li>
+			<li>Useful Programs</li>
+			<li>How to Get Started With Python For Kids</li>
+			<li>Tips and Tricks</li>
+		</ul>
+		<h3>About Linux</h3>
+		<div class="justify-content-center">
+			<p>What's the big deal with Linux? Why do people like it so much? Because it's COOOOOOL! You can do literally anything you want to your Linux system! Companies like Microsoft and Apple that make Windows PCs and MacBook computers hide a lot of the code that is used to run YOUR machine. This isn't right! If YOU own the computer, YOU should be able to see how it works! If you stick with programming, one day you'll see how cool this is. <br><br>So what is Linux? Linux is a type of operating system, and there are THOUSANDS of Linux operating systems called 'distros' (distributions). Basically, anyone can write their own Linux operating system, it just needs to use the Linux Kernel to be called a Linux operating system. The Kernel is basically the 'engine' of the computer. Don't worry about that. The operating system you're using right now is the most popular Linux operating system called Ubuntu. I love Ubuntu. I also like Mint, ElementaryOS, and Kali (for my hacking stuff). Get some more USBs and download more Linux distros to see which ones you like!
+			<br><br>
+			The main way that Linux users interact with their computer is through the terminal. The terminal is such an important tool for creating, modifying, and managing files, doing programming stuff, getting information about the system, and literally anything else you can imagine. On Ubuntu, you can always quickly open a terminal window by pressing Ctrl-Alt-T. You'll see a blinking cursor at a prompt waiting for commands. 
+			<br>Let's start looking at some commands!</p>
+		</div>
+		<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/tFFNiMV27VY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		<h3>The Terminal</h3>
+		<div class="justify-content-center">
+			<img src="/home/ubuntu/PythonForKids/images/terminal.png">
+			<p>The terminal is the program we use to access the Linux file system. Using it, we can do practically anything! The part on the left of the @ symbol is the name of the user, and on the right is the name of the system. After the colon is the file path which shows where you are on the system. The dollar sign is always at the end, and you put in your commands after it.</p>
+			<p>Here's a few cool commands that make use of the terminal. But before we get to the commands, we need to learn some new words:</p> 
+			<ul>
+				<li>directory - A directory is basically a folder. Directories hold files and even other directories. They're just a way of organizing things.</li>
+				<li>home (or home directory) - The home directory is the place where you (the user) begin to store your files. The '~' symbol by the dollar sign is the home symbol. Each user gets their own home directory, so if you both made your own seperate user accounts then Christian would have a home directory that is different from Dawson's.</li>
+				<li>root (or root directory) - The root directory is the place where the system stores its system files. To go to root, type 'cd /' (we'll go over this more later) but keep in mind that there is <strong>NO</strong> reason to move or delete root level files.</li>
+			</ul>
+			<p>Navigating the file system using the terminal can be scary at first, but really you just use the same commands over and over. Open up a terminal window with Ctrl-Alt-T and run these commands with me!</p>
+			<ul>
+				<li>
+					echo - prints stuff to the screen. See how everything that comes after 'echo' shows up on the next line? That's the output. This one isn't important when it comes to navigating the file system, I just wanted to show y'all a cool first command. After that line is printed, the terminal waits for another command!
+				</li>
+				<img src="/home/ubuntu/PythonForKids/images/echoCommand.png">
+				<li>
+					pwd - this stands for 'print working directory.' This will show you where are on your file system. The first '/' on the left is called 'root' and then every other slash after is kind of like an arrow that points to the next directory. Here's what you're seeing from left to right: First off we are in root (the first slash) then we go to the home directory, then ubuntu Documents, then PythonForKids, then finished_projects.
+				</li>
+				<img src="/home/ubuntu/PythonForKids/images/pwd.png">
+				<li>ls (that's a lower case L)- this lists all of the contents of the directory you are in. ls is super important for you to decide where to go. Before you go anywhere, you need to see where you can go! In the example below, you see the contents of the home directory: Applications, Documents, Desktop and more are all directories and are colored blue. The 'examples.desktop' thing is a file that contains important info about the desktop setup, but it's not important right now. We can switch over into the blue things, the directories. So let's look at that next!
+				</li>
+				<img src="/home/ubuntu/PythonForKids/images/ls.png">
+				<li>
+					cd - this means 'change directory.' This command is how you actually move around in your file system. In the example below I listed the contents of the home directory with 'ls' then decided I wanted to go to Documents so I typed 'cd Documents'. Once I was in Documents I listed the contents of <em>that</em> directory. Typeing 'cd' without a name of a directory will take you back to your home directory. So you can see this can go on and on as long as there are directories to go to. Let's look at how to make directories next.
+				</li>
+				<img src="/home/ubuntu/PythonForKids/images/cd.png">
+				<li>
+					mkdir - this means "make directory" and it does exactly what it says. It makes an empty directory that you can 'cd' into. See how I made the ZebraFacts directory? I listed what's in home first, then made ZebraFacts, listed again and BAM it's there! One thing: we Linux programmers try not to put spaces in our directory names. Things like mkdir will see the spaces in the name and treat it as seperate directories. So 'mkdir Zebra Facts' would make two directories: Zebra and Facts.
+				</li>
+				<img src="/home/ubuntu/PythonForKids/images/mkdir.png">
+				<li>
+					mv - this is the move command. This is how you move files and directories around. The way it works is that the first thing you type is the thing to move, then the next thing is where to put it. Once mv is done, the thing is no longer going to be where you moved it from. See here I had this file called 'BoringEnglishPaper.txt' in my home directory but I wanted to put it in my Documents directory. I used mv to put it in Documents.
+				</li>
+				<img src="/home/ubuntu/PythonForKids/images/mv.png">
+				<li>cp - this is the copy command. It does almost the same thing as mv except it keeps the original thing where it was and just puts a copy in the destination directory.</li>
+				<li>rm - this is the remove command. This is how you delete files or directories. In this example I decided that my english paper (BoringEnglishPaper.txt) is so bad I just want to delete it. First you see it's there in Documents, then I did rm on it and deleted it. You know it's gone because you don't see it anymore after doing 'ls' again.</li>
+				<img src="/home/ubuntu/PythonForKids/images/rm.png">
+				<li>cat - this is the concatenate command. It's <em>supposed</em> to be used for some other reason, but most programmers use it to quickly see the contents of a file. It's really useful for files that are human readable like .txt files.</li>
+				<img src="/home/ubuntu/PythonForKids/images/cat.png">
+			</ul>
+			<p>One final thing that will make working with the terminal easier is that you can press the Tab key to auto complete file or directory names. For example, if I wanna do 'cd Documents' I could type all of that, or I can type 'cd Doc' then hit Tab and it would fill in the rest.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/AO0jzD1hpXc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="justify-content-center">
+			<h3>Useful Programs</h3>
+			<ul>
+				<li>Sublime Text - This is where you're going to be writing code! I looooove Sublime Text because it is so simple to use. I even wrote this webpage in Sublime Text!</li>
+				<li>Firefox - This is the web browser that Linux uses. Firefox is great because it isn't too heavy on the system. Use Firefox to surf the web and do anything you would normally do on the Internet.</li>
+				<li>Discord - This is a program that allows you to do video and voice calling from your computer. If you ever run into a problem and you want to ask me for help, try calling me on Discord. I set up Discord and added me as a contact. The cool thing about Discord is you can use video calling and show the other person what you are seeing on your screen. This makes it easy to help 'debug' (find what's wrong) with the code.</li>
+			</ul>
+		</div>
+		<div class="justify-content-center">
+			<h3>How to Get Started With Python For Kids</h3>
+			<p>I made directories for Christian and Dawson in the home directory. When in home, type 'ls' and you should see them. If you 'cd' into them you'll see a 'my_code' directory where you can put the code you write when following along with the book. There's also a directory in home called 'PythonForKids' which has solutions and finished code. It also has the images for this website, so don't delete or move them!</p>
+		</div>
+		<div class="justify-content-center">
+			<h3>Tips and Tricks</h3>
+			<p>Linux offers a lot of cool little tricks.</p>
+			<ul>
+				<li>When in the terminal, pressing Ctrl-c immediately stops any process from running.</li>
+				<li>Drag the title bar of any application to the right or left side to "snap" it to that side. This is useful when you want to see two things at once, you can snap one thing to the left and snap the other thing to the right.</li>
+				<li>Don't forget to check for updates every so often with the following two commands: <code>sudo apt-get update</code> then <code>sudo apt-get upgrade</code>. The first command updates all of the 'repositories' which are the places where the update code is kept, but this won't actually upgrade the system. Upgrading is done with the second command. <br>* 'sudo' is the keyword that tells the computer "I am the super user of this system and I'm forcing you to do this command." Without it, the computer might not think you're important enough to do the command.</li>
+				<li>Click the icon on the top left to search the computer for any application. I use this all the time! You can even use the 'Windows' key to do it too.</li>
+			</ul>
+			<h5>Well, I hope y'all enjoy Linux and programming! If you start now and keep up with it, you'll be coding masters in no time!</h5>
+		</div>
+	</div>
+</body>
+</html>
